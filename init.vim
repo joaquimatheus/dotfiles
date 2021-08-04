@@ -18,6 +18,9 @@ let g:highlightedyank_highlight_duration = 1000
 " Use release branch (recommend)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'yuezk/vim-js'
+
 call plug#end()
 
 set expandtab       
@@ -46,11 +49,8 @@ let g:ale_linters = {
 let g:ale_fixers = {
   \    'javascript': ['eslint'],
   \    'typescript': ['prettier', 'tslint'],
-  \    'vue': ['eslint'],
   \    'scss': ['prettier'],
   \    'html': ['prettier'],
-  \    'reason': ['refmt']
 \}
 let g:ale_fix_on_save = 1
-
 
