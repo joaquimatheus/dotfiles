@@ -45,7 +45,7 @@ au FileType css setlocal formatprg=prettier\ --parser\ css
 
 let g:ale_linters = {
 \   'javascript': ['eslint'],
-\   'vue': ['eslint']
+\   'vue': ['eslint'],
 \   'php': ['phpstan'],
 \}
 
