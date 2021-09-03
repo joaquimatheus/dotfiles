@@ -50,7 +50,7 @@ let g:ale_linters = {
 \}
 
 let g:ale_fixers = {
-  \    'php': ['phpstan'],
+  \    'php': ['php_cs_fixer'],
   \    'javascript': ['eslint'],
   \    'typescript': ['prettier', 'tslint'],
   \    'scss': ['prettier'],
