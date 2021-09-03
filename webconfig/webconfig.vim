@@ -45,12 +45,12 @@ au FileType css setlocal formatprg=prettier\ --parser\ css
 
 let g:ale_linters = {
 \   'javascript': ['eslint'],
-\   'vue': ['eslint']
+\   'vue': ['eslint'],
 \   'php': ['phpstan'],
 \}
 
 let g:ale_fixers = {
-  \    'php': ['phpstan'],
+  \    'php': ['php_cs_fixer'],
   \    'javascript': ['eslint'],
   \    'typescript': ['prettier', 'tslint'],
   \    'scss': ['prettier'],
