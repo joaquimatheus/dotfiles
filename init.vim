@@ -19,7 +19,7 @@ Plug 'yuezk/vim-js'
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'
 
-Plug 'KeitaNakamura/neodark.vim'
+Plug 'tomasiser/vim-code-dark'
 
 call plug#end()
 
@@ -33,14 +33,12 @@ set shiftwidth=4
 
 set number
 set cursorline
+colorscheme codedark
 
 let g:neodark#background = '#202020'
 
-set -g @plugin 'KeitaNakamura/neodark.vim'
-
-
 let g:lightline = {}
-let g:lightline.colorscheme = 'neodark'
+let g:lightline.colorscheme = 'codedark'
 
 colorscheme neodark
 
