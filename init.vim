@@ -6,7 +6,6 @@ Plug 'junegunn/fzf.vim'
 map ; :Files<CR>
 
 Plug 'dense-analysis/ale'
-
 Plug 'machakann/vim-highlightedyank'
 hi HighlightedyankRegion cterm=reverse gui=reverse
 " set highlight duration time to 1000 ms, i.e., 1 second
@@ -20,31 +19,22 @@ Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'
 
 Plug 'tomasiser/vim-code-dark'
-
 Plug 'mustache/vim-mustache-handlebars'
-Plug 'preservim/nerdtree' |
-    \ Plug 'Xuyuanp/nerdtree-git-plugin',
-Plug 'ryanoasis/vim-devicons'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+
+" Plugins NERDTree AREA
+
+" Prisma
 Plug 'pantharshit00/vim-prisma'
 
 call plug#end()
 
-" NERDTree Config
-nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
-let NERDTreeShowHidden=1
-set encoding=UTF-8
-"/
 
 " Tab, Spaces etc config
 set expandtab       
 set autoindent      
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 "/
 
 " visual settings
@@ -128,6 +118,5 @@ let g:closetag_shortcut = '>'
 let g:closetag_close_shortcut = '<leader>>'
 
 " Coc Settings
-
-let g:coc_global_extensions = ['coc-json', 'coc-eslint', 'coc-tsserver', 'coc-flow']
-
+let g:coc_global_extensions = ['coc-json', 'coc-eslint', 'coc-tsserver', 'coc-flow', 'coc-explorer']
+:nmap <C-n> <Cmd>CocCommand explorer<cr>

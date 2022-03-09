@@ -1,5 +1,7 @@
 {
     "tsserver.enable": true,
     "typescript.suggestionActions.enabled": false,
-    "javascript.suggestionActions.enabled": false
+    "javascript.suggestionActions.enabled": false,
+    "explorer.icon.enableNerdfont": true,
+    "explorer.file.showHiddenFiles": true
 }
