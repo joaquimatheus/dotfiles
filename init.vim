@@ -17,8 +17,12 @@ Plug 'maxmellon/vim-jsx-pretty'
 Plug 'yuezk/vim-js'
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'
+Plug 'pangloss/vim-javascript'
+Plug 'mattn/emmet-vim'
+Plug 'norcalli/nvim-colorizer.lua'
 
-Plug 'tomasiser/vim-code-dark'
+" Theme
+Plug 'NLKNguyen/papercolor-theme'
 Plug 'mustache/vim-mustache-handlebars'
 
 " Plugins NERDTree AREA
@@ -40,12 +44,11 @@ set shiftwidth=2
 " visual settings
 set number
 set cursorline
-colorscheme codedark
-
-let g:neodark#background = '#202020'
+set background=dark
+set termguicolors 
+colorscheme PaperColor
 
 let g:lightline = {}
-let g:lightline.colorscheme = 'codedark'
 " end visual setings
 
 
@@ -118,5 +121,8 @@ let g:closetag_shortcut = '>'
 let g:closetag_close_shortcut = '<leader>>'
 
 " Coc Settings
-let g:coc_global_extensions = ['coc-json', 'coc-eslint', 'coc-tsserver', 'coc-flow', 'coc-explorer']
+let g:coc_global_extensions = ['coc-json', 'coc-eslint', 'coc-tsserver', 'coc-flow', 'coc-explorer', 'coc-html', 'coc-css']
+
 :nmap <C-n> <Cmd>CocCommand explorer<cr>
+
+lua require'colorizer'.setup()
