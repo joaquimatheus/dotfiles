@@ -48,7 +48,7 @@ set background=dark
 set termguicolors 
 colorscheme PaperColor
 
-let g:lightline = {}
+set noshowmode
 " end visual setings
 
 
