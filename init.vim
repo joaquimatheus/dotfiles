@@ -25,8 +25,6 @@ Plug 'norcalli/nvim-colorizer.lua'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'mustache/vim-mustache-handlebars'
 
-" Plugins NERDTree AREA
-
 " Prisma
 Plug 'pantharshit00/vim-prisma'
 
@@ -47,9 +45,11 @@ set cursorline
 set background=dark
 set termguicolors 
 colorscheme PaperColor
-
 set noshowmode
-" end visual setings
+
+set colorcolumn=80
+
+"end visual setings
 
 
 au FileType javascript setlocal formatprg=prettier
