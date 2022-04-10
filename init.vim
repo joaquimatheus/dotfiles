@@ -34,9 +34,9 @@ call plug#end()
 " Tab, Spaces etc config
 set expandtab       
 set autoindent      
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 "/
 
 " visual settings
@@ -65,7 +65,7 @@ let g:ale_fixers = {
   \    'scss': ['prettier'],
   \    'html': ['prettier'],
 \}
-
+ 
 let g:ale_fix_on_save = 1
 
 " use <tab> for trigger completion and navigate to the next complete item
@@ -121,7 +121,7 @@ let g:closetag_shortcut = '>'
 let g:closetag_close_shortcut = '<leader>>'
 
 " Coc Settings
-let g:coc_global_extensions = ['coc-json', 'coc-eslint', 'coc-tsserver', 'coc-flow', 'coc-explorer', 'coc-html', 'coc-css']
+let g:coc_global_extensions = ['coc-json', 'coc-flow', 'coc-explorer', 'coc-html', 'coc-css']
 
 :nmap <C-n> <Cmd>CocCommand explorer<cr>
 
