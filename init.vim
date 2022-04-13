@@ -28,6 +28,9 @@ Plug 'mustache/vim-mustache-handlebars'
 " Prisma
 Plug 'pantharshit00/vim-prisma'
 
+" SQL
+Plug 'shmup/vim-sql-syntax'
+
 call plug#end()
 
 
