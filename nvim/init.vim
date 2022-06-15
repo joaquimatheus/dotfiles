@@ -22,8 +22,12 @@ Plug 'mattn/emmet-vim'
 Plug 'norcalli/nvim-colorizer.lua'
 
 " Theme
-Plug 'NLKNguyen/papercolor-theme'
-Plug 'mustache/vim-mustache-handlebars'
+Plug 'lissaferreira/dalton-vim'
+
+"Prettier
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install --frozen-lockfile --production',
+  \ 'for': ['javascript', 'css', 'html'] }
 
 " Prisma
 Plug 'pantharshit00/vim-prisma'
@@ -31,12 +35,14 @@ Plug 'pantharshit00/vim-prisma'
 " SQL
 Plug 'shmup/vim-sql-syntax'
 
+" Prettier
+
 call plug#end()
 
 
 " Tab, Spaces etc config
 set expandtab       
-set autoindent      
+set autoindent
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
@@ -47,12 +53,12 @@ set number
 set cursorline
 set background=dark
 set termguicolors 
-colorscheme PaperColor
 set noshowmode
-
 set colorcolumn=80
+color dalton
 
-"end visual setings
+" netrw
+let g:netrw_liststyle = 3
 
 " Coc Settings
 let g:coc_global_extensions = ['coc-json', 'coc-html', 'coc-css']
